@@ -10,7 +10,10 @@ batch.sendNotification({
   recipients: {
     custom_ids: ['123']
   },
-  message: 'Hello world'
+  message: {
+        "title": "Hello!",
+        "body": "How's it going?"
+      }
 }, function(err, cb){
   console.log(err, cb);
 })
